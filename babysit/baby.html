@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baby</title>
+    <link rel="stylesheet" href="./baby.css">
+</head>
+<body>
+    <div class="nav">
+        <div class="logo">
+            <div class="ba">
+                <h1>Baby</h1>
+            </div>
+            <div class="si">
+                <h1>Sitting</h1>
+            </div>
+        </div>
+        <div class="nava">
+            <a href="../home/home.html">Home</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="../babysit/baby.html" class="spec">Apply</a>
+        </div>
+    </div>
+
+    <form id="ourForm" onclick="return validateForm(event)">
+        <div>
+            <input type="text" id="name" placeholder="Enter parent's name">
+            <p id="n_err" class="error"></p>
+        </div>
+        <div>
+            <input type="number" id="phone" placeholder="Enter parent's number">
+            <p id="p_err" class="error"></p>
+        </div>
+        <div>
+            <input type="email" id="email" placeholder="Enter parent's email">
+            <p id="e_err" class="error"></p>
+        </div>
+        <div>
+            <input type="text" id="cname" placeholder="Enter child's name">
+            <p id="cn_err" class="error"></p>
+        </div>
+        <div>
+            <input type="number" id="cage" placeholder="Enter child's age">
+            <p id="ca_err" class="error"></p>
+        </div>
+        <div>
+            <input type="date" id="date" placeholder="Select date of service">
+            <p id="d_err" class="error"></p>
+        </div>
+        <select id="time">
+            <option value="">Select time of service</option>
+            <option value="A month">Full-time</option>
+            <option value="Three months">Part-time</option>
+        </select>
+        <p id="tb_err" class="error"></p>
+
+        </select>
+        <select id="dura">
+            <option value="">Select duration of service</option>
+            <option value="A month">A month</option>
+            <option value="Three months">3 months</option>
+            <option value="Six months">6 months</option>
+            <option value="One year">1 year</option>
+        </select>
+        <p id="db_err" class="error"></p>
+
+        <select id="type">
+            <option value="">Select service type</option>
+            <option value="Daytime">Daytime</option>
+            <option value="Evening">Evening</option>
+            <option value="Overnight">Overnight</option>
+        </select>
+        <p id="t_err" class="error"></p>
+
+        <select id="avail">
+            <option value="">Select your preffered sitter</option>
+            <option value="Pep Guardiola">Pep Guardiola</option>
+            <option value="Arne Slot">Arne Slot</option>
+            <option value="Mikel Arterta">Mikel Arterta</option>
+        </select>
+        <p id="a_err" class="error"></p>
+
+        <button>Submit</button>
+        <p id="suber"></p>
+    </form>
+    <script src="./baby.js"></script>
+    <!-- <div>
+        <input type="text" id="date" placeholder="Select date of babysitting ">
+        <p id="d_err" class="error"></p>
+    </div>
+    <div>
+        <input type="text" id="time" placeholder="Select time of babysitting ">
+        <p id="tb_err" class="error"></p>
+    </div>
+    <div>
+        <input type="text" id="dura" placeholder="Select duration of babysitting">
+        <p id="db_err" class="error"></p>
+    </div>
+    <div>
+        <input type="text" id="type" placeholder="Choose service type">
+        <p id="t_err" class="error"></p>
+    </div>
+    <div>
+        <input type="text" id="avail" placeholder="Select from available babysitters">
+        <p id="a_err" class="error"></p>
+    </div> -->
+
+
+</body>
+</html>
